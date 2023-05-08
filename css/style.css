@@ -1,4 +1,4 @@
-@import url();
+
 
 * {
     margin: 0;
@@ -12,7 +12,8 @@
 }
 
 :root {
-    --bg-color: #1f242d;
+    --bg-color: #3b4963;
+     /* --bg-color: #1f242d;  */
     --second-bg-color: #323946;
     --text-color: #fff;
     --main-color: #0ef;
@@ -40,7 +41,8 @@ section {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: var(--second-bg-color);
+    /* background: rgba(43, 113, 226, 0.199); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,6 +86,9 @@ section {
 
 .home-img img {
     width: 35vw;
+    border-radius: 50%;
+    border-bottom: var(--main-color) solid;
+    border-left: var(--main-color) dotted;
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -166,6 +171,9 @@ span {
 
 .about-img img {
     width: 35vw;
+    border-radius: 50%;
+    border-bottom: var(--bg-color) solid;
+    border-right: var(--bg-color) dotted;
 }
 
 .heading {
@@ -185,6 +193,7 @@ span {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    text-align: justify;
 }
 
 .experiences h2 {
@@ -221,6 +230,7 @@ span {
 
 .experiences-box h3 {
     font-size: 2.6;
+    margin-bottom: 1%;
 }
 
 .experiences-box p {
