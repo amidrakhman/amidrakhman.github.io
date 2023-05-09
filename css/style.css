@@ -235,7 +235,12 @@ span {
 
 .experiences-box p {
     font-size: 1.6;
-    margin: 1rem 0 3rem;
+    margin: 1rem 0 .5rem;
+}
+
+.experiences-box ol li {
+    font-size: 1.6;
+    text-align: left;
 }
 
 .portfolio {
