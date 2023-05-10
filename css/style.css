@@ -548,6 +548,8 @@ footer-iconTop a i {
     .portfolio {
         padding-bottom: 7rem;
     }
+    .awards {
+        min-height: auto;
     .contact {
         min-height: auto;
     }
@@ -620,6 +622,10 @@ footer-iconTop a i {
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 617px) {
@@ -643,6 +649,10 @@ footer-iconTop a i {
     }
     .about-img img {
         width: 90vw;
+    }
+    .wrap {
+        width: auto;
+        height: auto;
     }
     
     .footer {
