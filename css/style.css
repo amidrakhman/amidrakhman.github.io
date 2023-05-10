@@ -409,15 +409,15 @@ span {
 
 .awards .wrap {
     display: flex;
-    animation: slide 10s infinite;
+    animation: slide 20s infinite;
     height: 50%;
 }
 
 .awards .wrap img {
     width: 50%;
     height: 50%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 @keyframes slide {
