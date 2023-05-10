@@ -323,6 +323,74 @@ span {
     color: var(--second-bg-color);
 }
 
+.skills h2 {
+    margin-bottom: 4rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.skills-container .skills-box {
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;   
+    display: flex;
+    width: 100%;
+    height: 80%;   
+}
+
+.skills-box img {
+        width: 100%;
+        height: 100%;
+        border: var(--main-color) dotted;
+        padding: 2rem;
+        transition: .5s ease;    
+}
+
+.skills-box:hover img {
+    transform: scale(1.1);
+}
+
+.skills-box .skills-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem ;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.skills-box:hover .skills-layer {
+    transform: translateY(0);
+}
+
+.skills-layer h4 {
+    font-size: 2rem;
+}
+
+.awards {
+    background: var(--second-bg-color);
+}
+
+.awards h2 {
+    margin-bottom: 4rem;
+}
+
+
+
 .contact h2 {
     margin-bottom: 3rem;
 }
