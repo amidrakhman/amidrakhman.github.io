@@ -396,7 +396,7 @@ span {
     display: flex;
     width: 100%;
     height: 80%;   
-    text-align: ce;
+    text-align: center;
 }
 
 .awards h2 {
@@ -411,6 +411,7 @@ span {
     display: flex;
     animation: slide 20s infinite;
     height: 50%;
+    position: relative;
 }
 
 .awards .wrap img {
@@ -641,6 +642,10 @@ footer-iconTop a i {
     .contact form .input-box input {
         width: 100%;
     }
+    .awards-container {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media (max-width: 365px) {
@@ -649,10 +654,6 @@ footer-iconTop a i {
     }
     .about-img img {
         width: 90vw;
-    }
-    .wrap {
-        width: auto;
-        height: auto;
     }
     
     .footer {
