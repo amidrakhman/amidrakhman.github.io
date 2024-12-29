@@ -85,7 +85,7 @@ section {
 }
 
 .home-img img {
-    width: 35vw;
+    width: 27vw;
     border-radius: 50%;
     border-bottom: var(--main-color) solid;
     border-left: var(--main-color) dotted;
@@ -125,6 +125,7 @@ span {
 
 .home-content p {
     font-size: 1.6rem;
+    margin-right: 5rem;
 }
 
 .social-media a {
@@ -170,10 +171,10 @@ span {
 }
 
 .about-img img {
-    width: 35vw;
-    border-radius: 50%;
-    border-bottom: var(--bg-color) solid;
-    border-right: var(--bg-color) dotted;
+    width: 23vw;
+    border-radius: 20%;
+    /*border-bottom: var(--bg-color) solid;*/
+    /*border-right: var(--bg-color) dotted;*/
 }
 
 .heading {
@@ -183,6 +184,7 @@ span {
 
 .about-content h2 {
     text-align: left;
+    margin-left: 4rem;
     line-height: 1.2;
 }
 
@@ -192,7 +194,8 @@ span {
 
 .about-content p {
     font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    margin: 2rem 0 5rem;
+    margin-left: 4rem;
     text-align: justify;
 }
 
