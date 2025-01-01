@@ -59,3 +59,8 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+// Get current year
+const currentYear = new Date().getFullYear();
+// Insert with element id 'current_year'
+document.getElementById('current_year').textContent = currentYear;
