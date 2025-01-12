@@ -67,14 +67,31 @@ function sendWhatsAppMessage() {
     var email = document.getElementById('user-email').value;
     var message = document.getElementById('whatsapp-message').value;
 
-     // Validate the inputs
+    // Validate the inputs
   if (!name || !email || !message) {
-    alert("Please fill in all the required information (Name, Email and Message)");
+    alert("Please fill in all the required information (Name, Email, and Message)");
+
+    // Focus the first empty field and scroll to it
+    if (!name) {
+      document.getElementById('user-name').focus();
+      document.getElementById('user-name').scrollIntoView({ behavior: 'smooth' });
+    } else if (!email) {
+      document.getElementById('user-email').focus();
+      document.getElementById('user-email').scrollIntoView({ behavior: 'smooth' });
+    } else if (!message) {
+      document.getElementById('whatsapp-message').focus();
+      document.getElementById('whatsapp-message').scrollIntoView({ behavior: 'smooth' });
+    }
     return; // Stop the function if validation fails
   }
 
+  // Enhanced email validation: Check if email contains "@" and "."
   if (!email.includes('@') || !email.includes('.')) {
-    alert("Please enter a valid email address");
+    alert("Please enter a valid email address!");
+
+    // Focus the email field and scroll to it
+    document.getElementById('user-email').focus();
+    document.getElementById('user-email').scrollIntoView({ behavior: 'smooth' });
     return; // Stop the function if email is invalid
   }
   
