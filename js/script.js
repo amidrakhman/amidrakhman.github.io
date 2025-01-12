@@ -85,7 +85,7 @@ function sendWhatsAppMessage() {
     var encodedMessage = encodeURIComponent(finalMessage);
   
     // Define the phone number and the WhatsApp URL 
-    var phoneNumber = '085888695806'; 
+    var phoneNumber = '+6285888695806'; 
     var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   
     // Open the WhatsApp link in a new tab or window
