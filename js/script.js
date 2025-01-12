@@ -60,6 +60,41 @@ const typed = new Typed('.multiple-text', {
     loop: true
 });
 
+// Function to send a WhatsApp message
+function sendWhatsAppMessage() {
+    // Get the name, email, and message from the input fields
+    var name = document.getElementById('user-name').value;
+    var email = document.getElementById('user-email').value;
+    var message = document.getElementById('whatsapp-message').value;
+
+     // Validate the inputs
+  if (!name || !email || !message) {
+    alert("Please fill in all the required information (Name, Email and Message)");
+    return; // Stop the function if validation fails
+  }
+
+  if (!email.includes('@') || !email.includes('.')) {
+    alert("Please enter a valid email address");
+    return; // Stop the function if email is invalid
+  }
+  
+    // Combine name, email, and message into one final message
+    var finalMessage = `My Name is ${name} (${email}) \nMessage: ${message}`;
+  
+    // URL encode the final message to handle spaces and special characters
+    var encodedMessage = encodeURIComponent(finalMessage);
+  
+    // Define the phone number and the WhatsApp URL 
+    var phoneNumber = '085888695806'; 
+    var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  
+    // Open the WhatsApp link in a new tab or window
+    window.open(whatsappUrl, '_blank');
+  }
+  
+  // Add event listener to the send button
+  document.getElementById('send-button').addEventListener('click', sendWhatsAppMessage);
+
 // Get current year
 const currentYear = new Date().getFullYear();
 // Insert with element id 'current_year'
